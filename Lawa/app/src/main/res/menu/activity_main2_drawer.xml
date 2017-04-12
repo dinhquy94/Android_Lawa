@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_sound_waves"
+            android:title="Bảng điều khiển" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Camera" />
+        <item
+            android:id="@+id/nav_analystic"
+            android:icon="@drawable/ic_verified_database_symbol_for_interface"
+            android:title="Xem thống kê " />
+        <item
+            android:id="@+id/nav_laser"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Thiết lập laser" />
+        <item
+            android:id="@+id/nav_led"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Điều khiển Led" />
+    </group>
+
+
+
+</menu>

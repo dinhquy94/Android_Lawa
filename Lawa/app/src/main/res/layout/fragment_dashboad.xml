@@ -1,0 +1,199 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.root.lawa.DashboadFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:minHeight="170dp"
+                android:background="#4caf50"
+                android:id="@+id/general_state"
+                android:gravity="center">
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/ic_success"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/state_icon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Đang lấy dữ liệu..."
+                    android:id="@+id/state_label"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/state_thuong_luu"
+                    android:text="Hạ Lưu"
+                    android:textSize="11dp"
+                    android:layout_weight="1"
+                    android:textColor="#fff"
+                    android:background="@color/safeColor"
+                    android:layout_marginRight="2.5dp"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:id="@+id/state_ha_luu"
+                    android:layout_height="70dp"
+                    android:text="Thượng lưu"
+                    android:textColor="#fff"
+                    android:textSize="11dp"
+                    android:layout_weight="1"
+                    android:background="@color/safeColor"
+                    android:layout_marginLeft="2.5dp"/>
+
+            </LinearLayout>
+
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:background="@color/colorBorder" >
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:minHeight="60dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/map"
+                        android:layout_marginRight="10dp"
+                        />
+                    <TextView
+                        android:text="Tên cầu"
+                        android:textStyle="bold"
+                        />
+                    <TextView
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:id="@+id/textViewCau"
+                        android:text="Cầu ..."
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:minHeight="60dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/waterlevel"
+                        android:layout_marginRight="10dp"
+                        />
+                    <TextView
+                        android:text="Mực nước hiện tại"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:text="11m"
+                        android:id="@+id/mucnuoc_textview"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"/>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:minHeight="60dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginTop="1dp"
+                    android:background="#fff"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_server"
+                        android:layout_marginRight="10dp" />
+                    <TextView
+                        android:text="Tình trạng hệ thống"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:gravity="right"
+                        android:layout_weight="1"
+                        android:text="Normal"
+                        android:layout_marginRight="20dp"
+                        android:textStyle="bold"/>
+
+                </TableRow>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp">
+                    <TextView
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Báo động"
+                        android:textStyle="bold"/>
+
+                </FrameLayout>
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Báo động thượng lưu"
+                    android:background="#fff"
+                    android:paddingLeft="20dp"
+                    />
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Báo động hạ lưu"
+                    android:background="#fff"
+                    android:paddingLeft="20dp"
+                    />
+            </TableLayout>
+            <TextView
+                android:id="@+id/textViewUpdateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tessst"
+                android:layout_margin="8dp"
+                android:textSize="10dp"
+                android:layout_gravity="right"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+</FrameLayout>

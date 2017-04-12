@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Switch
+        android:id="@+id/led_panel_thuongluu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Biển led thượng lưu "
+        android:background="#fff"
+        android:paddingLeft="20dp"
+        />
+    <Switch
+    android:id="@+id/led_panel_haluu"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="Biển led hạ lưu"
+    android:background="#fff"
+    android:paddingLeft="20dp"
+    />
+</LinearLayout>

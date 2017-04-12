@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quynd.h.TestActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:gravity="left"
+                    android:layout_marginLeft="10dp"
+
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Required !"
+                    android:id="@+id/username"
+                    />
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:gravity="left"
+                    android:layout_marginLeft="10dp"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textPassword"
+                    android:id="@+id/password"
+
+
+                    />
+            </LinearLayout>
+        </TableRow>
+        <TableRow android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Remember ?"/>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_weight="1">
+                   <Button
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="Login !"
+                       android:id="@+id/btnLogin"
+                       />
+                   <Button
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="RESET"
+                       />
+               </LinearLayout>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
